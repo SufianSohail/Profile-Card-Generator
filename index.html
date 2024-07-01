@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentIDCard</title>
+    <link rel="stylesheet" href="../styling/colors.css">
+</head>
+<body class="bg-color">
+    <script>window.location.href("http://127.0.0.1:5500/index.html");</script>
+    <div class="container">
+        <div class="box">
+            <h2 class="title">Student Details</h2>
+            <form>
+                <div class="fields">
+                    <label for="schoolName">School Name:</label>
+                    <input id="schoolName" placeholder="School Name"/>
+                </div>
+                <div class="fields">
+                    <label for="studentName">Student Name:</label>
+                    <input id="studentName" placeholder="Student Name"/>
+                </div>
+                <div class="fields">
+                    <label for="DateofBirth">Date of Birth:</label>
+                    <input id="DateofBirth" placeholder="Date of Birth"/>
+                </div>
+                <div class="fields">
+                    <label for="studentClass">Class:</label>
+                    <input id="studentClass" placeholder="Class"/>
+                </div>
+                <div class="fields">
+                    <label for="rollNumber">Roll Number:</label>
+                    <input id="rollNumber" type="number" placeholder="Roll Number"/>
+                </div>
+                <div class="fields">
+                    <label for="contactNumber">Contact Number:</label>
+                    <input id="contactNumber" type="number" placeholder="Contact Number"/>
+                </div>
+                <!--
+                <div class="fields">
+                    <label for="profileImage">Profile Image:</label>
+                    <input type="file" id="profileImage" accept="image/*">
+                </div>
+                -->
+                <div class="fields">
+                    <label for="profileImage">Profile Image:</label>
+                    <input type="file" id="profileImage" accept="image/*" style="display: none;">
+                    <button type="button" id="customFileUpload" class="btn0">Choose File</button>
+                </div>
+                
+                <div>
+                    <button class="btn1" type="button" onclick="cardUpdate()">Submit Here</button>
+                    <button class="btn2" type="reset">Clear All</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>

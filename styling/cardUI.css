@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #1c1c25;
+  font-family: Arial, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section::before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 10% 80px;
+  opacity: 0.9;
+  top: 6%;
+  left: 75%;
+  background: linear-gradient(#aaffa9, #11ffbd);
+}
+
+.card1::before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 10% 80px;
+  opacity: 0.9;
+  bottom: 6%;
+  left: 12%;
+  background: linear-gradient(#0098f0, #0457d3);
+}
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 80px;
+  padding: 10px;
+  width: 900px;
+  height: 480px;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.5);
+  background-color: #ffffff0d;
+  filter: blur(0.2px);
+}
+.left-container {
+  flex: 1;
+  max-width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  padding: 10px;
+  margin: 30px;
+  border-right: 1px solid #e4e4e4;
+}
+
+.right-container {
+  flex: 1;
+  max-width: 50%;
+  height: 300px;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 30px;
+}
+
+img {
+  border-radius: 50%;
+  background-image: linear-gradient(white, #3e9acb, #ee00ff, white);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  width: 200px;
+  height: 200px;
+  max-width: 200px;
+  margin-top: 70px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-top: 15px;
+}
+h3 {
+width: 100%;
+  font-size: 24px;
+  margin-top: 5px;
+  margin-left: 40px;
+}
+.gradienttext {
+  color:#37afef;
+}
+
+p {
+  font-size: 22px;
+  margin-bottom: 5px;
+  color:#aaffa9;
+
+}
+
+table {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 70px 0px 0px;
+  width: 100%;
+  height: 200px;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  color: #aaffa9;
+}
+
+td:first-child {
+  font-weight: bold;
+}
+.backbtn{
+  padding: 10px 20px;
+  margin: 20px 100px 0px 50px;
+  background: none;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  border-radius: 9999px;
+  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+  color: #fff;
+  font-size: 11px;
+}

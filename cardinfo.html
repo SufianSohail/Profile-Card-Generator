@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Glass morphism Profile Card</title>
+    <link rel="stylesheet" href="./styling/cardUI.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body onload="cardLoad()">
+    <section>
+        <div class="card1">
+            <div class="card">
+                <div class="left-container">
+                  <img id= "profileImageDisplay" src="./images/Fabrics Doonia logo transparent 1.png" alt="Profile Image">
+                  <h2 class="gradienttext" id="studentNameVal">Student Name</h2>
+                  <p id="studentClassVal">Class</p>  
+                </div>
+                <div class="right-container">
+                  <h3 class="gradienttext">Student Details</h3>
+                  <table>
+                      <tr>
+                          <td>School Name :</td>
+                          <td id="schoolNameVal">School</td>
+                        </tr>
+                    <tr>
+                      <td>Date of Birth :</td>
+                      <td id="DoBVal">DoB</td>
+                    </tr>
+                    <tr>
+                        <td>Roll Number :</td>
+                        <td id="rollNumberVal">11122</td>
+                      </tr>
+                    <tr>
+                      <td>Contact Number :</td>
+                      <td id="contactNumberVal">+91 XXXXXXXXXX</td>
+                    </tr>
+                  </table>
+                  <button class="backbtn" type="button" onclick="BacktoHome()">Back</button>></button>
+                </div>
+              </div>
+        </div>
+    </section>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
+

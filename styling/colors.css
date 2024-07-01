@@ -1,0 +1,117 @@
+.bg-color {
+  background-color: rgb(37, 37, 37);
+}
+
+.title {
+  color: #dbdbdb;
+  padding: 10px;
+  text-align: center;
+  background: none;
+  box-shadow: inset 0px 0px 1px rgb(5, 5, 5);
+  color: #dbdbdb;
+}
+
+.container{
+    margin: 100px 500px 0px 500px;
+}
+
+
+.box {
+  width: 500px;
+  height: 520px;
+  background: linear-gradient(#212121, #212121) padding-box,
+    linear-gradient(90deg, transparent 25%, #e81cff, #40c9ff) border-box;
+  border: 2px solid transparent;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  border-radius: 16px;
+  background-size: 200% 100%;
+  animation: gradient 4s ease infinite;
+}
+
+
+@keyframes gradient {
+    0% {
+      background-position: 50% 50%;
+    }
+  
+    50% {
+      background-position: 100% 50%;
+    }
+  
+    100% {
+      background-position: 0% 60%;
+    }
+  }
+  
+  .box button:active {
+    scale: 1.95;
+  }
+
+
+.fields > label {
+  color: rgb(219, 219, 219);
+  width: 150px;
+  display: inline-block;
+  font-size: 17px;
+}
+
+.fields {
+  padding: 10px 30px 10px 50px;
+}
+
+.btn1{
+    padding: 10px 20px;
+    margin: 20px 100px 0px 50px;
+    background: none;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    border-radius: 9999px;
+    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+    color: #fff;
+    font-size: 11px;
+}
+.btn2{
+    padding: 10px 20px;
+    margin: 20px 50px 0px 91px;
+    background: none;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    border-radius: 9999px;
+    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+    color: #fff;
+    font-size: 12px;
+}
+
+.btn0{
+  width: 190px;
+  height: 30px;
+  background: none;
+  border: none;
+  outline: none;
+  margin-left: 40px;
+  padding: 5px 100px 5px 0px;
+  font-size: 13px;
+  border-radius: 9999px;
+  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+  color: #fff;
+  cursor: pointer;
+}
+
+
+.fields > input {
+  width: 180px;
+  height: 20px;
+  background: none;
+  border: none;
+  outline: none;
+  margin-left: 40px;
+  padding: 5px 0px 5px 10px;
+  font-size: 13px;
+  border-radius: 9999px;
+  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+  color: #fff;
+}
