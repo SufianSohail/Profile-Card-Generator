@@ -84,8 +84,9 @@ img {
   background-image: linear-gradient(white, #3e9acb, #ee00ff, white);
   background-origin: border-box;
   background-clip: content-box, border-box;
-  width: 200px;
-  height: 200px;
+  width:200px;
+  height:200px;
+  object-fit: cover;
   max-width: 200px;
   margin-top: 70px;
 }
