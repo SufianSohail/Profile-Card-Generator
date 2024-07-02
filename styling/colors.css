@@ -69,8 +69,6 @@
     outline: none;
     border-radius: 20px;
     border-radius: 9999px;
-    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
-    color: #fff;
     font-size: 11px;
 }
 .btn2{
@@ -81,8 +79,6 @@
     outline: none;
     border-radius: 20px;
     border-radius: 9999px;
-    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
-    color: #fff;
     font-size: 12px;
 }
 
@@ -96,22 +92,49 @@
   padding: 5px 100px 5px 0px;
   font-size: 13px;
   border-radius: 9999px;
-  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
-  color: #fff;
-  cursor: pointer;
 }
 
 
 .fields > input {
   width: 180px;
-  height: 20px;
+  height: 17px;
   background: none;
-  border: none;
+  border: 2px solid transparent;
   outline: none;
   margin-left: 40px;
   padding: 5px 0px 5px 10px;
   font-size: 13px;
   border-radius: 9999px;
+}
+
+
+/* Add this at the bottom of color.css */
+
+/* General styles for glow effect */
+.glow-button,
+.glow-input {
+  position: relative;
+  border: 2px solid transparent;
   box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
   color: #fff;
+  cursor: pointer;
 }
+
+.glow-button.border-glow,
+.glow-input.border-glow {
+  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+  background: radial-gradient(#212121, #212121) padding-box,
+    radial-gradient(transparent 15%, #e81cff, #40c9ff) border-box;
+  
+}
+
+.glow-input:hover{
+  -webkit-text-fill-color: #08889e;
+}
+
+.glow-button.text-glow {
+  text-shadow: 0 0 0px #08889e ;
+  color:#088fa7;
+}
+
+

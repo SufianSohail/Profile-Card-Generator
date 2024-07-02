@@ -70,3 +70,22 @@ document.addEventListener('DOMContentLoaded', function() {
 function BacktoHome(){
     window.location.href = "http://127.0.0.1:5500/index.html";
 }
+
+// Add this to your script.js
+
+document.querySelectorAll('.glow-button, .glow-input').forEach(element => {
+    element.addEventListener('mousemove', e => {
+      const rect = element.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+  
+      const isNearBorder = x < 10 || x > rect.width - 10 || y < 10 || y > rect.height - 10;
+      element.classList.toggle('border-glow', isNearBorder);
+      element.classList.toggle('text-glow', !isNearBorder);
+    });
+  
+    element.addEventListener('mouseleave', () => {
+      element.classList.remove('border-glow', 'text-glow');
+    });
+  });
+  
