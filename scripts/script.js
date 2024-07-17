@@ -89,3 +89,6 @@ document.querySelectorAll('.glow-button, .glow-input').forEach(element => {
     });
   });
   
+  function PrintCard(){
+    window.print();
+  }

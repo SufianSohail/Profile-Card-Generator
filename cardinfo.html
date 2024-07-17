@@ -11,10 +11,12 @@
 </head>
 <body onload="cardLoad()">
     <section>
-        <div class="card1">
+        <div class="bluecard">
             <div class="card">
                 <div class="left-container">
+                  <div class="profile-pic">
                   <img id= "profileImageDisplay" src="./images/Fabrics Doonia logo transparent 1.png" alt="Profile Image">
+                </div>
                   <h2 class="gradienttext" id="studentNameVal">Student Name</h2>
                   <p id="studentClassVal">Class</p>  
                 </div>
@@ -38,7 +40,10 @@
                       <td id="contactNumberVal">+91 XXXXXXXXXX</td>
                     </tr>
                   </table>
-                  <button class="backbtn glow-button" type="button" onclick="BacktoHome()">Back</button>></button>
+                  <div class="profilecardbtns">
+                  <button class="cardbtn glow-button" type="button" onclick="PrintCard()">Print Card</button>
+                  <button class="cardbtn glow-button" type="button" onclick="BacktoHome()">Back</button>
+                  </div>
                 </div>
               </div>
         </div>

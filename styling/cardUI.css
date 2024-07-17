@@ -15,7 +15,7 @@ body {
   height: 100%;
 }
 section {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -34,7 +34,7 @@ section::before {
   background: linear-gradient(#aaffa9, #11ffbd);
 }
 
-.card1::before {
+.bluecard::before {
   content: "";
   position: absolute;
   width: 200px;
@@ -48,47 +48,49 @@ section::before {
 .card {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
   border-radius: 80px;
   padding: 10px;
   width: 900px;
   height: 480px;
+  justify-content:space-around;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.5);
-  background-color: #ffffff0d;
   filter: blur(0.2px);
 }
+
 .left-container {
-  flex: 1;
-  max-width: 30%;
   display: flex;
   flex-direction: column;
+  width: 30%;
   align-items: center;
-  height: 100%;
-  padding: 10px;
-  margin: 30px;
+  justify-content: center;
+  padding-right: 25px;
   border-right: 1px solid #e4e4e4;
 }
 
 .right-container {
-  flex: 1;
-  max-width: 50%;
-  height: 300px;
-  padding: 10px;
-  margin: 20px;
-  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: 100%;
+  padding-left: 25px;
+  align-items: center;
+  justify-content: center;
 }
 
-img {
+.profile-pic {
   border-radius: 50%;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
   background-image: linear-gradient(white, #3e9acb, #ee00ff, white);
   background-origin: border-box;
   background-clip: content-box, border-box;
-  width:200px;
-  height:200px;
   object-fit: cover;
-  max-width: 200px;
-  margin-top: 70px;
+
+}
+.profile-pic > img{
+  max-width: 100%;
+  max-height: 100%;
 }
 
 h2 {
@@ -96,10 +98,12 @@ h2 {
   margin-top: 15px;
 }
 h3 {
-width: 100%;
+  display: flex;
+  flex-direction: column;
   font-size: 24px;
-  margin-top: 5px;
-  margin-left: 40px;
+  padding-left: 75px;
+  width: 100%;
+  margin-top: 10px;
 }
 .gradienttext {
   color:#37afef;
@@ -115,16 +119,15 @@ p {
 table {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0px 70px 0px 0px;
+  padding-left: 40px;
   width: 100%;
   height: 200px;
   border-collapse: collapse;
+  margin-top: 10px;
 }
 
 td {
-  padding: 10px;
+  padding: 10px 0px 10px 0px;
   border: none;
   border-radius: 20px;
   color: #aaffa9;
@@ -132,10 +135,19 @@ td {
 
 td:first-child {
   font-weight: bold;
+  padding-right: 50px;
 }
-.backbtn{
+
+.profilecardbtns{
+display: flex;
+flex-direction: row;
+width: 88%;
+}
+.cardbtn{
   padding: 10px 20px;
-  margin: 20px 100px 0px 50px;
+  justify-content: space-between;
+  align-content: space-between;
+  margin-right: 170px;
   background: none;
   border: none;
   outline: none;
@@ -144,4 +156,50 @@ td:first-child {
   box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
   color: #fff;
   font-size: 11px;
+}
+
+
+@media print{
+  body{
+    min-width: 100%;
+  }
+  .card{
+    width:700px;
+  }
+  .profile-pic{
+    width:100px;
+    height: 100px;
+  }
+  section{
+    width: 100%;
+  }
+  p{
+    font-size: large;
+  }
+  h2{
+    font-size: medium;
+  }
+  .bluecard::before {
+    width: 100px;
+    height: 100px;
+    border-radius: 25% 10px;
+    bottom: 12%;
+    left: 10%;
+  }
+  section::before {
+    width: 100px;
+    height: 100px;
+    border-radius: 25% 10px;
+    top: 12%;
+    left:80%;
+  }
+  h3{
+    font-size: large;
+  }
+  td{
+    font-size: medium;
+  }
+  .cardbtn{
+    display: none;
+  }
 }
