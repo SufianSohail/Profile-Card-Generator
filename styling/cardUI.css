@@ -158,7 +158,6 @@ width: 88%;
   font-size: 11px;
 }
 
-
 @media print{
   body{
     min-width: 100%;

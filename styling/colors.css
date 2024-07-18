@@ -60,6 +60,31 @@
 .fields {
   padding: 10px 30px 10px 50px;
 }
+.fileUploadContainer{
+  display: flex;
+  align-items: center;
+  background-color: #08889e;
+  width: 193px;
+  height: 30px;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 12px;
+  border-radius: 9999px;
+  margin-left: 193px;
+  margin-top: -25px;
+}
+.fileUploadContainer button{
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 12px;
+  color: rgb(219, 219, 219);
+  border-radius: 9999px;
+}
+.fileUploadContainer p{
+  font-size: 9px;
+}
 
 .btn1{
     padding: 10px 20px;
@@ -81,19 +106,6 @@
     border-radius: 9999px;
     font-size: 12px;
 }
-
-.btn0{
-  width: 190px;
-  height: 30px;
-  background: none;
-  border: none;
-  outline: none;
-  margin-left: 40px;
-  padding: 5px 100px 5px 0px;
-  font-size: 13px;
-  border-radius: 9999px;
-}
-
 
 .fields > input {
   width: 180px;

@@ -36,21 +36,19 @@
                     <label for="contactNumber">Contact Number:</label>
                     <input id="contactNumber" type="number" class="glow-input" placeholder="Contact Number"/>
                 </div>
-                <!--
+
                 <div class="fields">
                     <label for="profileImage">Profile Image:</label>
-                    <input type="file" id="profileImage" accept="image/*">
-                </div>
-                -->
-                <div class="fields">
-                    <label for="profileImage">Profile Image:</label>
+                    <div class="fileUploadContainer glow-button">
                     <input type="file" id="profileImage" accept="image/*" style="display: none;">
-                    <button type="button" id="customFileUpload" class="btn0 glow-button">Choose File</button>
+                    <button type="button" id="customFileUpload">Choose File</button>
+                    <p id="fileNameDisplay"></p>
+                </div>
                 </div>
                 
                 <div>
                     <button class="btn1 glow-button" type="button" onclick="cardUpdate()">Submit Here</button>
-                    <button class="btn2 glow-button" type="reset">Clear All</button>
+                    <button class="btn2 glow-button" type="reset" id="resetButton">Clear All</button>
                 </div>
             </form>
         </div>

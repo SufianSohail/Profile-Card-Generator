@@ -59,8 +59,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     profileImage.addEventListener('change', function() {
-        if (this.files && this.files[0]) {
-            fileNameDisplay.textContent = this.files[0].name;
+        if (profileImage.files && profileImage.files[0]) {
+            fileNameDisplay.textContent = profileImage.files[0].name;
         } else {
             fileNameDisplay.textContent = 'No file chosen';
         }
