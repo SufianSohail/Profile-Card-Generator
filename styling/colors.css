@@ -63,13 +63,11 @@
 .fileUploadContainer{
   display: flex;
   align-items: center;
-  background-color: #08889e;
   width: 193px;
   height: 30px;
   background: none;
   border: none;
   outline: none;
-  font-size: 12px;
   border-radius: 9999px;
   margin-left: 193px;
   margin-top: -25px;
@@ -78,13 +76,12 @@
   background: none;
   border: none;
   outline: none;
-  font-size: 12px;
+  font-size: 13px;
   color: rgb(219, 219, 219);
   border-radius: 9999px;
+  padding-left: 12px;
 }
-.fileUploadContainer p{
-  font-size: 9px;
-}
+
 
 .btn1{
     padding: 10px 20px;

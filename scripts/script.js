@@ -52,18 +52,26 @@ function cardLoad(){
 document.addEventListener('DOMContentLoaded', function() {
     const profileImage = document.getElementById('profileImage');
     const customFileUpload = document.getElementById('customFileUpload');
-    const fileNameDisplay = document.getElementById('fileNameDisplay');
+    const resetButton = document.getElementById('resetButton');
+    const studentForm = document.getElementById('studentForm');
 
+    
     customFileUpload.addEventListener('click', function() {
         profileImage.click();
     });
 
     profileImage.addEventListener('change', function() {
         if (profileImage.files && profileImage.files[0]) {
-            fileNameDisplay.textContent = profileImage.files[0].name;
+            customFileUpload.textContent = profileImage.files[0].name;
         } else {
-            fileNameDisplay.textContent = 'No file chosen';
+            customFileUpload.textContent = 'No file chosen';
         }
+    });
+    resetButton.addEventListener('click', (e) => {
+        e.preventDefault(); // Prevent the default reset behavior
+        studentForm.reset(); // Reset the form
+        customFileUpload.textContent = 'Choose File';
+        profileImage.value = ''; // Clear the file input
     });
 });
 
